@@ -1,7 +1,15 @@
-import { createStore } from 'vuex'
+import { createStore } from 'vuex';
+import authModule from "./login";
+import productsModule from './products';
 
-export default createStore({
+//Definimos la interfaz global de la aplicación
+export interface IState { 
+  greeting: string;
+}
+
+export default createStore<IState>({
   state: {
+    greeting: 'Welcome!'
   },
   getters: {
   },
@@ -10,5 +18,7 @@ export default createStore({
   actions: {
   },
   modules: {
+    auth: authModule,
+    products: productsModule
   }
 })

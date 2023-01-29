@@ -1,4 +1,7 @@
 # practicavuetypescript
+Simulación de una tienda (Platzi Shop), a través de la API de pruebas de Platzi: https://fakeapi.platzi.com/ 
+Para las peticiones utilizaremos la librería axios.
+Para el desarrollo de la aplicación utilizaremos Vue y Typescript.
 
 ## Project setup
 ```
